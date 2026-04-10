@@ -7,6 +7,10 @@
   "subMetas": {},
   "userData": {
     "isBundle": true,
-    "bundleConfigID": "auto_72IfKhihxPgLzVKC7tVgZd"
+    "bundleConfigID": "auto_72IfKhihxPgLzVKC7tVgZd",
+    "isRemoteBundle": {
+      "wechatgame": false,
+      "bytedance-mini-game": false
+    }
   }
 }

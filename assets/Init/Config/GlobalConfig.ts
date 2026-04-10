@@ -15,18 +15,18 @@ export const GlobalConfig = {
     //奖励
     Award: {
         //
-        WinAward: 568,
-        WinLvStep: 42,          //关卡奖励递增数量
-        WinVideoRate: 4.2,        //视频多倍
-        LoseAward: 215,
-        VideoAward: 490,          //视频奖励
-        VideoMistryAward: 15,     //
-        OnlineAwardMin: 320,        //每分钟奖励
+        WinAward: 612,
+        WinLvStep: 38,          //关卡奖励递增数量
+        WinVideoRate: 3.8,        //视频多倍
+        LoseAward: 185,
+        VideoAward: 520,          //视频奖励
+        VideoMistryAward: 18,     //
+        OnlineAwardMin: 345,        //每分钟奖励
         //体力
         addStep: 1,        //增长数量
         LvCost: 1,         //关卡消耗
-        recoverTime: 320, //体力恢复时长
-        max: 8,          //自动增长的体力上限
+        recoverTime: 280, //体力恢复时长
+        max: 10,          //自动增长的体力上限
         //
     },
 
@@ -72,9 +72,9 @@ export const GlobalConfig = {
         goldRate: { default: 1, step: 0.1, maxLv: 50 },
         bossInfo: { default: 1, lvupNum: 3, maxLv: 27 },
         // 花费
-        roleNumCost: { default: 100, step: 200 },
-        goldRateCost: { default: 100, step: 400 },
-        bossCost: { default: 1000, step: 300 },
+        roleNumCost: { default: 120, step: 210 },
+        goldRateCost: { default: 90, step: 420 },
+        bossCost: { default: 1100, step: 280 },
         // 获取属性
         getRoleNumByLv: (lv: number) => {
             lv = clamp(lv, 1, lv);
@@ -114,21 +114,21 @@ export const GlobalConfig = {
     },
     // 玩家 
     Player: {
-        moveSpd: 7.05,
+        moveSpd: 7.25,
         //--普通
-        scale: 1.18,     //模型缩放
-        cldRadius: 1.1, //碰撞范围
+        scale: 1.25,     //模型缩放
+        cldRadius: 1.05, //碰撞范围
         hp: 1,
-        atkRate: 1.1,     //攻击比例
-        checkRadius: 2.1,     //检测道具中心的半径
+        atkRate: 1.2,     //攻击比例
+        checkRadius: 2.3,     //检测道具中心的半径
         //
-        centerCldRadius: 2.1, //中心检测范围
+        centerCldRadius: 2.2, //中心检测范围
 
         //--巨人--
-        giantScale: 2.5,
-        giantCldRadius: 1.1,
-        giantHp: 8,
-        giantAtkRate: 2.8,
+        giantScale: 2.65,
+        giantCldRadius: 1.15,
+        giantHp: 10,
+        giantAtkRate: 3.1,
     },
 
     EnemyCfg: {
@@ -142,40 +142,40 @@ export const GlobalConfig = {
     Enemy: {
         //普通兵
         0: {
-            spd: 7.2,
+            spd: 7.4,
             atk: 1,
-            hp: 3,
-            scale: 1.12,
+            hp: 2,
+            scale: 1.15,
         },
         //炸弹
         1: {
-            spd: 8.5,
+            spd: 8.8,
             atk: 1,
-            hp: 9,
-            scale: 1.18,
-            boomRadius: 2.8,  //爆炸半径
-            boomAtk: 2.5,
+            hp: 8,
+            scale: 1.22,
+            boomRadius: 3.1,  //爆炸半径
+            boomAtk: 2.8,
         },
         //刺客
         2: {
-            spd: 10.5,
-            atk: 1.2,
-            hp: 6,
-            scale: 1.45,
+            spd: 10.8,
+            atk: 1.3,
+            hp: 5,
+            scale: 1.4,
         },
         //巨人
         3: {
-            spd: 7.5,
-            atk: 1.5,
-            hp: 16,
-            scale: 2.8,
+            spd: 7.8,
+            atk: 1.6,
+            hp: 18,
+            scale: 2.9,
         },
         //Boss
         4: {
-            spd: 7.0,
-            atk: 1.5,
-            hp: 25,
-            scale: 2.5,
+            spd: 7.2,
+            atk: 1.6,
+            hp: 30,
+            scale: 2.6,
         },
     },
 
@@ -209,59 +209,59 @@ export const GlobalConfig = {
 export const WeaponCfg: { [type: number]: WeaponInfo } = {
     //手枪
     0: {
-        atk: 1,
-        atkSpd: 2,
+        atk: 1.1,
+        atkSpd: 2.1,
         perfab: 'Pistol',
         bullet: 'mergePistolBullet',
-        bulletSpd: 20,
-        propScale: 5,  //作为道具显示的缩放
+        bulletSpd: 22,
+        propScale: 5.2,  //作为道具显示的缩放
     },
     //短枪
     1: {
-        atk: 1,
-        atkSpd: 1,
+        atk: 1.1,
+        atkSpd: 1.1,
         perfab: 'Shotgun',
         bullet: 'mergeShotgunBullet',
-        bulletSpd: 20,
-        propScale: 3,  //作为道具显示的缩放
+        bulletSpd: 23,
+        propScale: 3.2,  //作为道具显示的缩放
     },
     //喷火枪
     2: {
-        atk: 3,
-        atkSpd: 1,
+        atk: 3.3,
+        atkSpd: 1.1,
         perfab: 'FireGun',
         bullet: 'mergeFireGunBullet',
-        bulletSpd: 20,
-        propScale: 2,  //作为道具显示的缩放
+        bulletSpd: 18,
+        propScale: 2.1,  //作为道具显示的缩放
     },
     //机关枪
     3: {
-        atk: 1,
-        atkSpd: 3,
+        atk: 1.1,
+        atkSpd: 3.3,
         perfab: 'MachineGun',
         bullet: 'mergeMachineGunBullet',
-        bulletSpd: 30,
-        propScale: 2,  //作为道具显示的缩放
+        bulletSpd: 33,
+        propScale: 2.1,  //作为道具显示的缩放
     },
     //手榴弹
     4: {
-        atk: 0.8,
-        atkSpd: 1,
+        atk: 0.9,
+        atkSpd: 1.1,
         perfab: 'Grenades',
         bullet: ' ', //todo
-        bulletSpd: 5,
-        propScale: 2,  //作为道具显示的缩放
-        boomRadius: 3,  //爆炸范围
+        bulletSpd: 5.5,
+        propScale: 2.1,  //作为道具显示的缩放
+        boomRadius: 3.3,  //爆炸范围
     },
     //无人机
     5: {
-        atk: 1,
-        atkSpd: 4,
+        atk: 1.1,
+        atkSpd: 4.4,
         perfab: 'Drone',
         bullet: 'mergeDroneBullet',
-        bulletSpd: 20,
-        propScale: 2,  //作为道具显示的缩放
-        droneheight: 7,
+        bulletSpd: 22,
+        propScale: 2.1,  //作为道具显示的缩放
+        droneheight: 7.2,
     },
 }
 

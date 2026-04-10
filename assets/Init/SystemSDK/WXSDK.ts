@@ -14,27 +14,27 @@ export class WXSDK extends SDK {
     }
 
     protected setAdCfg(): void {
-        // this.adConfig.adBannerIdList = ["adunit-54330508d48d3e28", "adunit-acb20dfa27f6f92c", "adunit-cb5819b2c5cf6b4b",];    // 指定 Banner 单元广告ID
-        // // 指定激励视频广告ID,
-        // this.adConfig.adVideoIdList = [
-        //     'adunit-b0e7eddf4e5df691', //通用于所有钞票领取场景 0
-        //     'adunit-27b5b53348173c59', //仅用于武器获取（商店与关卡解锁） 1
-        //     'adunit-68c40bc2f8286d8f', //用于首页人物三属性升级 2
-        //     'adunit-c2dcadc77dfcfd3e', //仅用户通关失败复活场景 3
-        // ];
-        // this.adConfig.adInterstitialId = "adunit-37b2d7b671e454be"; // 指定插屏广告ID
-        // this.adConfig.shareInfoArr = [{ title: "一起来挑战吧!", img: '' }]; // 自定义分享
-        // this.adConfig.adCustomIdList = [
-        //     "adunit-4c51dbb4aada6db3",  // UI 5x5
-        //     "adunit-ad540b2f0e4179da",  // 游戏中 左侧
-        //     "adunit-ad540b2f0e4179da",  // 游戏中 右侧 //adunit-c7b2052a424e2113
-        //     "adunit-bb24d5c8c74ae3c5",  // UI 底部-H
-        //     "adunit-b44d8750878ef6ad",  // UI 右上单格子
-        //     "adunit-b44d8750878ef6ad",  // Game 右上单格子
-        //     "adunit-9ea2c7f045a97b37",  // UI 5x3
-        // ];     // 指定原生模板广告ID，原生模板广告支持多个
-        // //设置banner刷新间隔
-        // uniSdk.AdPlat.instance.setBannerMaxShowTimes(10);
+        this.adConfig.adBannerIdList = ["adunit-54330508d48d3e28", "adunit-acb20dfa27f6f92c", "adunit-cb5819b2c5cf6b4b",];    // 指定 Banner 单元广告ID
+        // 指定激励视频广告ID,
+        this.adConfig.adVideoIdList = [
+            'adunit-b0e7eddf4e5df691', //通用于所有钞票领取场景 0
+            'adunit-27b5b53348173c59', //仅用于武器获取（商店与关卡解锁） 1
+            'adunit-68c40bc2f8286d8f', //用于首页人物三属性升级 2
+            'adunit-c2dcadc77dfcfd3e', //仅用户通关失败复活场景 3
+        ];
+        this.adConfig.adInterstitialId = "adunit-37b2d7b671e454be"; // 指定插屏广告ID
+        this.adConfig.shareInfoArr = [{ title: "一起来挑战吧!", img: '' }]; // 自定义分享
+        this.adConfig.adCustomIdList = [
+            "adunit-4c51dbb4aada6db3",  // UI 5x5
+            "adunit-ad540b2f0e4179da",  // 游戏中 左侧
+            "adunit-ad540b2f0e4179da",  // 游戏中 右侧 //adunit-c7b2052a424e2113
+            "adunit-bb24d5c8c74ae3c5",  // UI 底部-H
+            "adunit-b44d8750878ef6ad",  // UI 右上单格子
+            "adunit-b44d8750878ef6ad",  // Game 右上单格子
+            "adunit-9ea2c7f045a97b37",  // UI 5x3
+        ];     // 指定原生模板广告ID，原生模板广告支持多个
+        //设置banner刷新间隔
+        uniSdk.AdPlat.instance.setBannerMaxShowTimes(10);
     }
 
     /**

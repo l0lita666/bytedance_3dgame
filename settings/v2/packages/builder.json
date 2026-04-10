@@ -6,7 +6,7 @@
     "watermarkLocation": "default",
     "logo": {
       "type": "custom",
-      "image": "E:\\cocos-store\\GameClient-JiZhanTuWei\\assets\\Init\\Assets\\bg.jpg"
+      "image": "db://assets/Init/Assets/bg.jpg"
     }
   },
   "textureCompressConfig": {
@@ -14,7 +14,7 @@
   },
   "bundleConfig": {
     "custom": {
-      "auto_d8eIO+L7BLcaq/eKKF7qNX": {
+      "auto_d8eIO+L7BLca/eKKF7qNX": {
         "displayName": "AudioAssets",
         "configs": {
           "native": {

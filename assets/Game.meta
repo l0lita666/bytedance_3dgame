@@ -8,6 +8,10 @@
   "userData": {
     "isBundle": true,
     "priority": 2,
-    "bundleConfigID": "auto_35BLsHCRNGQr118YYA10Zk"
+    "bundleConfigID": "auto_35BLsHCRNGQr118YYA10Zk",
+    "isRemoteBundle": {
+      "wechatgame": false,
+      "bytedance-mini-game": false
+    }
   }
 }

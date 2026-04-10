@@ -44,28 +44,29 @@ export default class SDK {
          * 第一步：先配置好广告单元ID
          */
         // 这里的 app_key 请登陆 https://zerosgame.com/admin 查看
-        // this.adConfig.app_key = "dqxekvujtxxrtoub";
-        // this.adConfig.adBannerIdList = ["adunit-e29df638c636869a", "adunit-5471e710c78c639b", "adunit-a4d4fbc1357dfa4e"];    // 指定 Banner 单元广告ID
-        // this.adConfig.adVideoIdList = ["adunit-1344099b40bbe089"];        // 指定激励视频广告ID,
-        // this.adConfig.adInterstitialId = "adunit-a3cc34c12c4d8f85"; // 指定插屏广告ID
-        // this.adConfig.adCustomIdList = ["adunit-6b13bdce9b8c6ef9"];     // 指定原生模板广告ID，原生模板广告支持多个
-        // this.adConfig.shareInfoArr = [{ title: "一起来玩吧!", img: "" }]; // 自定义分享
+        let appKey = "dqxekvujtxxrtoub";
+        this.adConfig.app_key = appKey;
+        // 强制设置到全局，防止部分 SDK 版本读取不到
+        uniSdk.Global.appKey = appKey;
 
-        // //导出
-        // this.adConfig.isExportWxGameAd = true;
+        this.adConfig.adBannerIdList = ["2anbw8oadl7gd07ibr"];    // 指定 Banner 单元广告ID
+        this.adConfig.adVideoIdList = ["1nuk7omkrl8n3bmc33"];        // 指定激励视频广告ID,
+        this.adConfig.adInterstitialId = "ee11f11d4j22ka3367"; // 指定插屏广告ID
+        this.adConfig.adCustomIdList = [];     // 抖音暂不配置原文模板
+        this.adConfig.shareInfoArr = [{ title: "一起来玩吧!", img: "" }]; // 自定义分享
+
+        // 模拟运行时先关闭导出配置，避免 APPKEY 校验失败导致后续逻辑中断
+        this.adConfig.isExportWxGameAd = false;
     }
 
     private initSdk(callback?: Function, target?: any) {
+        clog.log('开始初始化 uniSdk, 配置信息:', this.adConfig);
         // 带着广告配置信息去初始化SDK
         uniSdk.init(this.adConfig, (userInfo: uniSdk.UserInfo) => {
             if (userInfo && userInfo.uid) {
-                console.log('初始化SDK 完成!', userInfo);
-                console.log("用户微信ID:" + userInfo.openid);
-                console.log("用户UID:" + userInfo.uid);
-                console.log("用户昵称:" + userInfo.nickName);
-                console.log("用户头像:" + userInfo.avatarUrl);
-                console.log("用户当前游戏关卡:" + userInfo.gameLevel);
-                console.log("用户当前金币:" + userInfo.money);
+                clog.log('初始化SDK 完成!', userInfo);
+            } else {
+                clog.warn('SDK 初始化回调执行，但 userInfo 为空，请检查 APPKEY 是否有效');
             }
 
             if (callback) callback.call(target);
