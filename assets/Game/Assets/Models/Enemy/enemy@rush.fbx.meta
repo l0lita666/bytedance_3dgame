@@ -1,0 +1,103 @@
+{
+  "ver": "2.3.12",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f12e4ee5-fe81-469a-a17c-c8ec78e1eea1",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c00e2": {
+      "importer": "gltf-animation",
+      "uuid": "f12e4ee5-fe81-469a-a17c-c8ec78e1eea1@c00e2",
+      "displayName": "",
+      "id": "c00e2",
+      "name": "rush.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6333333253860474
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "059bb": {
+      "importer": "gltf-scene",
+      "uuid": "f12e4ee5-fe81-469a-a17c-c8ec78e1eea1@059bb",
+      "displayName": "",
+      "id": "059bb",
+      "name": "enemy@rush.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.6333333253860474,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "rush",
+            "from": 0,
+            "to": 0.6333333253860474,
+            "wrapMode": 2,
+            "previousId": "c00e2"
+          }
+        ]
+      }
+    ],
+    "redirect": "f12e4ee5-fe81-469a-a17c-c8ec78e1eea1@059bb",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "f12e4ee5-fe81-469a-a17c-c8ec78e1eea1@059bb"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

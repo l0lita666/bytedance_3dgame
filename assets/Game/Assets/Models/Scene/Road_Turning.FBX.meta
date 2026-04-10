@@ -1,0 +1,100 @@
+{
+  "ver": "2.3.12",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "71be9b75-0cc0-44a7-a45d-875c5aa21656",
+  "files": [],
+  "subMetas": {
+    "71310": {
+      "importer": "gltf-mesh",
+      "uuid": "71be9b75-0cc0-44a7-a45d-875c5aa21656@71310",
+      "displayName": "",
+      "id": "71310",
+      "name": "Road_Turning.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 296
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "78e21": {
+      "importer": "gltf-material",
+      "uuid": "71be9b75-0cc0-44a7-a45d-875c5aa21656@78e21",
+      "displayName": "",
+      "id": "78e21",
+      "name": "13 - Default.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e4100": {
+      "importer": "gltf-scene",
+      "uuid": "71be9b75-0cc0-44a7-a45d-875c5aa21656@e4100",
+      "displayName": "",
+      "id": "e4100",
+      "name": "Road_Turning.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
+    },
+    "redirect": "71be9b75-0cc0-44a7-a45d-875c5aa21656@e4100",
+    "assetFinder": {
+      "meshes": [
+        "71be9b75-0cc0-44a7-a45d-875c5aa21656@71310"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "71be9b75-0cc0-44a7-a45d-875c5aa21656@78e21"
+      ],
+      "scenes": [
+        "71be9b75-0cc0-44a7-a45d-875c5aa21656@e4100"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}
